@@ -1,25 +1,5 @@
 # js-advanced-course
 
-## File structure
-
-```bash
-.
-├── material
-│   └── class-00n
-│       ├── demo
-│       ├── instructor-guide
-│       ├── lab
-│       ├── lab-solution
-│       └── problem-solving
-├── README.md
-├── resources
-├── scripts
-│   ├── generate-structure.sh
-│   └── README.md
-└── templates
-    └── README.md
-```
-
 ## Schedule
 
 | Week | 1                                  | 2             | 3                                 | 4             | 5                                                 |
