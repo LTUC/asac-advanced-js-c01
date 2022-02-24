@@ -5,6 +5,7 @@ const cors = require('cors');
 const logger = require('./middleware/logger.js')
 const getAgent = require('./middleware/getAgent.js')
 const square = require('./middleware/square.js');
+const validator = require('./middleware/validator.js');
 const errorHandler = require('./handler/500.js')
 const notFound = require('./handler/404.js')
 const app = express();
@@ -49,6 +50,14 @@ app.get('/data',(req,res)=>{
         name: 'razan',
         email:'r.alquran@ltuc.com'
     })
+})
+
+// localhost:3000/person?name=sherry
+app.get('/person',validator, (req,res)=>{
+    const person = {
+        name: req.query.name
+    }
+    res.json(person);
 })
 
 
