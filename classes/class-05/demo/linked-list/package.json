@@ -1,0 +1,17 @@
+{
+  "name": "linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ll.js",
+  "scripts": {
+    "start": "node ll.js",
+    "test": "jest --verbose --coverage",
+    "watch": "jest --verbose --coverage --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
