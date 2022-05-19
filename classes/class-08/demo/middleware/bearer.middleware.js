@@ -8,6 +8,7 @@ function bearer(req, res, next) {
 
     Users.authenticateBearer(bearerHeaderToken)
         .then(userData => {
+            console.log('jjjjjjjjjjjjjjjjjjjjjj',userData);
             req.user = userData;
             next();
         }).catch(() => {

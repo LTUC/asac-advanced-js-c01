@@ -35,10 +35,13 @@ const Users = sequelize.define('users', {
 });
 Users.authenticateBasic = async function (username, password) {
     const user = await this.findOne({ where: { username } });
+    console.log('authenticateBasic userrrrrr>>', user);
     const valid = await bcrypt.compare(password, user.password);
+    // console.log('authenticateBasic valid>>', valid);
     if (valid) {
         let newToken = jwt.sign({ username: user.username }, API_SECRET);
         user.token = newToken;
+        // console.log('');
         return user;
     } else {
         throw new Error('Invalid User');

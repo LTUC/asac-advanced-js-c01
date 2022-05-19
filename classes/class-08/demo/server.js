@@ -6,9 +6,12 @@ const Users = require('./models/users.model');
 const bearer = require('./middleware/bearer.middleware');
 const basic = require('./middleware/basic.middleware');
 const acl = require('./middleware/acl.middleware');
+const cors = require('cors');
 const app = express();
 
 app.use(express.json());
+app.use(cors());
+
 
 app.post('/signup', async (req, res) => {
     try {
