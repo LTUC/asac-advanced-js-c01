@@ -1,0 +1,45 @@
+.Marquee {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 100px 0;
+  width: 100%;
+
+  .Marquee-content {
+    display: flex;
+    animation: marquee 10s linear infinite running;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    .Marquee-tag {
+      width: 200px;
+      margin: 0 0.5em;
+      padding: 0 0.5em;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        mix-blend-mode: multiply;
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

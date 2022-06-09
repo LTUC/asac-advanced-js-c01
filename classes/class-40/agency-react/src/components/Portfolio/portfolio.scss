@@ -1,0 +1,31 @@
+.portfolio-section {
+  margin-top: 130px!important;
+
+  .inner-portfolio {
+    grid-template-columns: repeat(12, 1fr);
+
+    .portfolio-header {
+      padding-right: 200px;
+      grid-column: span 6;
+
+      h2 {
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 600;
+      }
+    }
+
+    .portfolio-item {
+      background-color: $background-color;
+      filter: $box-shadow;
+      border-radius: 20px;
+      grid-column: span 6;
+
+      img {
+        border-radius: 20px;
+        height: 200px;
+        width: 100%;
+      }
+    }
+  }
+}

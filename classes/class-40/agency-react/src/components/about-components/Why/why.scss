@@ -1,0 +1,19 @@
+.why-us {
+  margin-top: 80px;
+  background: $box-gradient;
+  color: #fff;
+
+  .inner-why-us {
+    padding: 50px 250px;
+    text-align: center;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.about-company {
+  .about-us-heading {
+    padding: 50px 0px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        bottom: -15px;
+        border-radius: 2px;
+        background-color: $text-color;
+      }
+    }
+
+    h3 {
+      font-size: 16px;
+      text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+
+  .company-description {
+    .about-image {
+      img {
+        border-radius: 20px;
+      }
+    }
+
+    .about-description {
+      h2 {
+        font-weight: 600;
+        font-size: 22px;
+      }
+
+      p {
+        line-height: 2;
+        font-weight: 300;
+      }
+    }
+  }
+}

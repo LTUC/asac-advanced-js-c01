@@ -1,0 +1,55 @@
+.solution-section {
+  margin-top: 130px!important;
+
+  .solution-image  {
+    width: 400px;
+    height: 490px;
+    border-radius: 30px;
+    background: $background-color;
+    filter: $box-shadow;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: -50px;
+    }
+  }
+
+  .solution-carousel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 190px;
+    height: 230px;
+    background-color: $background-color;
+    border-radius: 30px;
+    left: 300px;
+    filter: $box-shadow;
+
+    .carousle-item {
+      i {
+        background: $box-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+      }
+  
+      p {
+        line-height: 21px;
+      } 
+    }
+  }
+
+  .solution-description {
+    h2 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    p {
+      line-height: 24px;
+    }
+  }
+}
